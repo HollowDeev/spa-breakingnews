@@ -1,20 +1,24 @@
-import logo from "../../assets/LogoBN.png"
+import logo from "../../assets/LogoBN.png";
 import { MagnifyingGlass } from "@phosphor-icons/react";
-import "./Navbar.css"
+
+import { Button, Nav, ImageLogo, InputSpace } from "./Navbar-styled";
 
 export function Navbar() {
   return (
     <>
-      <nav>
-        <div className="input-search-space">
+      <Nav>
+        <InputSpace>
+          <div>
             <MagnifyingGlass size={20} color="#757575" />
-          <input type="text" placeholder="Pesquise por um título"/>
-        </div>
+          </div>
 
-        <img src={logo} alt="Logo do Breaking News" />
+          <input type="text" placeholder="Pesquise por um título" />
+        </InputSpace>
 
-        <button>Entrar</button>
-      </nav>
+        <ImageLogo src={logo} alt="Logo do Breaking News" />
+
+        <Button>Entrar</Button>
+      </Nav>
     </>
   );
 }

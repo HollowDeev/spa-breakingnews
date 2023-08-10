@@ -1,11 +1,13 @@
-
-import './App.css'
+import Home from "./pages/Home/Home";
+import { GlobalStyled } from "./GlobalStyled";
 
 function App() {
-
   return (
-    <h1>Olá React</h1>
-  )
+    <>
+      <GlobalStyled />
+      <Home />
+    </>
+  );
 }
 
-export default App
+export default App;
