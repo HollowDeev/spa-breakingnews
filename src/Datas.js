@@ -1,4 +1,4 @@
-export const news = [
+const news = [
     {
         title: "Notice Title 1 ",
         text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam nemo atque dicta consequatur eligendi. Consectetur ipsa dolore et unde porro quasi impedit in, temporibus facere quo praesentium quas inventore quis?",
@@ -31,3 +31,5 @@ export const news = [
         comments: 4
     }
 ]
+
+export default news
