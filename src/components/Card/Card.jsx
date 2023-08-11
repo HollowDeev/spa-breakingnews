@@ -1,27 +1,27 @@
 import { ChatText, ThumbsUp } from "@phosphor-icons/react";
 import { CardContainer, CardBody, CardFooter } from "./CardStyle";
+import TextLimit from "../TextLimit/TextLimit";
 
-export function Card({ news }) {
-  console.log(news);
+export function Card(props) {
   return (
     <CardContainer>
       <CardBody>
         <div>
-          <h2>{news.title}</h2>
-          <p>{news.text}</p>
+          <h2>{props.title}</h2>
+          <TextLimit text={props.text} limit={150}/>
         </div>
 
-        <img src={news.image} alt="Imagem" />
+        <img src={props.banner} alt="Imagem" />
       </CardBody>
 
       <CardFooter>
         <div id="curtidas">
           <ThumbsUp size={20} color="#1a1a1a" />
-          <span>{news.likes}</span>
+          <span>{props.likes}</span>
         </div>
         <div id="comentarios">
           <ChatText size={20} color="#1a1a1a" />
-          <span>{news.comments}</span>
+          <span>{props.comments}</span>
         </div>
       </CardFooter>
 
