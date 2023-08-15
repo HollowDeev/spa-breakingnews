@@ -9,3 +9,9 @@ export const HomeBody = styled.div`
 
     margin: 20px auto;
 `
+
+export const HomeHeader = styled.div`
+    width: 80%;
+    display: flex;
+    margin: 1rem auto;
+`

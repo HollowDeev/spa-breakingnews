@@ -26,7 +26,7 @@ export const InputSpace = styled.div`
   justify-content: flex-end;
   
 
-  div {
+  button {
     position: absolute;
     right: 0.1rem;
     z-index: 10;
@@ -34,6 +34,12 @@ export const InputSpace = styled.div`
     background-color: #f5f5f5;
     border-radius: 0.3rem;
     padding: 0.4rem;
+    cursor: pointer;
+  }
+
+  button:hover{
+    box-shadow: 5px 0px #757575;
+    transition: all 50ms ease-in;
   }
 
   input {
@@ -49,24 +55,15 @@ export const InputSpace = styled.div`
       border: 1px solid #0bade3;
     }
   }
-`;
+`
 
-export const Button = styled.button`
-  background-color: #0bade3;
-  border: none;
-  outline: none;
+export const ErrorSpan = styled.span`
+  background-color: #ffcccc;
+  color: #970000;
+  padding: 0.5rem;
+  display: flex;
+  justify-content: center;
   font-size: 1rem;
-  text-transform: uppercase;
-  padding: 0.4rem 1rem;
-  color: #fff;
-  transition: all 0.4s ease-in-out;
-  cursor: pointer;
-  border-radius: 0.3rem;
-  font-family: Roboto, arial;
-  font-weight: 500;
-  letter-spacing: 0.1rem;
-
-  &:hover {
-    background-color: #0a86af;
-  }
-`;
+  font-weight: bold;
+  border-radius: 7px;
+`
